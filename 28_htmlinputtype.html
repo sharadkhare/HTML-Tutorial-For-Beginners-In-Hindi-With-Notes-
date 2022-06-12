@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types</title>
+</head>
+<body>
+    <h2>input type tel</h2>
+    <form>
+        <label for="phone">Enter your phone number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9] {3}-[0-9] {4}-[0-9] {3}">
+        <!--999-9999-999 -->
+    </form>
+    
+    
+    <h2>input type search</h2>
+    <form><label for="search">search me</label>
+    <input type="search" id="search" name="search" placeholder="search me">
+    </form>
+
+
+
+    <h2>input type range</h2>
+    <form>
+        <label for="vol">Volume between 0 to 50:</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+    </form>
+    <h2>input type file</h2>
+    <form>
+        <label for="myfile">please select your file</label>
+        <input type="file" id="myfile" name="myfile">
+    </form>
+
+    <h2>input type number</h2>
+    <form>
+        <label for="qu">Quantity between 1 to 5 :</label>
+        <input type="number" id="qu" name="qu" min="1" max="5">
+    </form>
+
+    <h2>input type email</h2>
+    <form>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" name="email">
+    </form>
+
+
+    <h2>input type date</h2>
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+    <h2>date range limitation</h2>
+    <form>
+        <label for="datemax">Enter the date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+        <label for="datemin">Enter the date after 2020-01-01</label>
+        <input type="date" id="datemin" name="datemin" min="2020-01-02">
+    </form>
+
+    <h2>input type datetime-local</h2>
+    <form>
+        <label for="bt">Birthday date and time</label>
+        <input type="datetime-local" id="bt" name="bt">
+    </form>
+
+    
+    <h2>input type color</h2>
+    <form >
+        <label for="color">PLease select your fav color</label>
+        <input type="color" id="color" name="color">
+    </form>
+
+    <h2>Input type text</h2>
+    <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname">
+    </form>
+    <h2>input type password</h2>
+    <form action="#">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+    </form>
+    <h2>input type submit</h2>
+    <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="Sharad"><br>
+        <label for="lname">last Name</label>
+        <input type="text" id="lname" name="lname" value="Khare"><br>
+        <input type="submit" value="submit">
+      
+    </form>
+    <h2>input type reset</h2>
+    <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" value="" placeholder="first name"><br>
+        <label for="lname">last Name</label>
+        <input type="text" id="lname" name="lname" value="" placeholder="last name"><br>
+        <input type="submit" value="submit">
+        <input type="reset">
+    </form>
+    <h2>input type radio</h2>
+    <form>
+        <input type="radio" id="html" name="fav" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="java" name="fav" value="JAVA">
+        <label for="java">JAVA</label>
+        <input type="radio" id="css" name="fav" value="CSS">
+        <label for="css">CSS</label>
+    </form>
+    <h2>input type checkbox</h2>
+    <form>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="java" name="java" value="java">
+        <label for="java">JAVA</label>
+    </form>
+    <h2>input type button</h2>
+    <input type="button" onclick="alert('Hello sharad Bhai')" value="Click me!">
+
+    
+</body>
+</html>

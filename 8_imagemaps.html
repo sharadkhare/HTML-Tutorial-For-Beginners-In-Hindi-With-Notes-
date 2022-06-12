@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iamge Maps</title>
+    <script>
+        function myfunction() {
+            alert("you have clicked the picture");
+        }
+    </script>
+</head>
+<body>
+    <h2>Image Maps demo</h2>
+    <img src="/html intro.png" alt="this is image map demo" width="50%" usemap="#workmap">
+    <h2>four types</h2>
+    <p>rect, circle, poly, default, custom</p>
+    <map name="workmap">
+        <area shape="" coords="34, 180, 80, 80" href="download.png" onclick="myfunction()">
+
+        
+    
+    
+    </map>
+
+</body>
+</html>

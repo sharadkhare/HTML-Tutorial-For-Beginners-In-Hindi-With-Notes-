@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript overview in HTML</title>
+</head>
+<body>
+    <h2>Format of javascript</h2>
+    <p id="datacode"></p>
+    <script>document.getElementById("datacode").innerHTML = "Hello sharad bhai";
+    </script>
+
+    <h1>ths is data and time function</h1>
+    <button type="button" onclick="document.getElementById('date').innerHTML=Date()"> click me to display date and time</button>
+    <p id="date"></p>
+    
+    <h2>changing the content of am HTML Element</h2>
+    <button type="button" onclick="myfunction()"> Click me </button>
+    <p id="change"> this is by default text.</p>
+    <script>function myfunction() {
+        document.getElementById("change").innerHTML= "hello sharad khare";
+    }
+    </script>
+
+    <h2>style of javascript</h2>
+    
+    <p id="sharad">this javascript can change the style</p>
+    <script> function myfunction() {
+        document.getElementById("sharad").style.fontSize= "25px";
+        document.getElementById("sharad").style.color="red";
+        document.getElementById("sharad").style.backgroundColor="yellow"
+    }
+        
+        </script>    
+    <button type="button" onclick="myfunction()"> click me for changing</button>
+
+    <h2>No script demo</h2>
+     <script>document.getElementById("nodemo").innerHTML="hello sharad khare";
+    </script>
+    <noscript>Sorry, this browser does not support javascript</noscript>   
+
+
+</body>
+</html>

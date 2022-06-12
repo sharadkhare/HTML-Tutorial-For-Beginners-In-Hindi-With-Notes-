@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Search Menu</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+        }
+        .left {
+            flex: 35%;
+            padding: 15px 0;
+        }
+        .left h2 {
+            padding-left: 8px;
+        }
+        .right {
+            flex: 65%;
+            padding: 15px;
+        }
+        #mysearch {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid black;
+        }
+        #mymenu {
+            list-style-type: none;
+            padding: 0;margin: 0;
+        }
+        #mymenu li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+        #mymenu li a:hover {
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Search Menu</h2>
+    <div class="row">
+        <div class="left" style="background-color: darkgray;">
+        <h2>Menu</h2>
+        <input type="text" id="mysearch" onkeyup="myfunction()" placeholder="Search.." title="Type in a category">
+        <ul id="mymenu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li> 
+        </ul>
+        </div>
+        <div class="right" style="background-color:coral ;">
+            <h2>page Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio laudantium repellat modi facere vitae velit fugiat inventore beatae! Itaque corporis hic enim, delectus sequi accusantium assumenda nemo magnam ducimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam numquam, minus ducimus sapiente consectetur temporibus culpa atque sed magnam eaque illum, aperiam id. Quia, suscipit. Cumque, corrupti! Nesciunt, quam?</p>
+            <p>this is some text</p>
+        </div>
+    </div>
+    <script>
+        function myfunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mysearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("mymenu");
+            li = ul.getElementsByTagName("li");
+            for (i =0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) >-1) {
+                    li[i].style.display ="";    
+                } else {
+                    li[i].style.display ="none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

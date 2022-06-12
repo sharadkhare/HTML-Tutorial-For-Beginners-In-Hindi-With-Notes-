@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        border: solid;
+        background-color: springgreen;
+        padding: 20px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: darkgrey;
+        height: 300px;
+    }
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer {
+        background-color: crimson;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>CSS Float Layout
+        </h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">html</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">javascript</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>HTML Tutorial</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quaerat deserunt, odit, neque distinctio aliquam culpa laudantium repudiandae a cum, mollitia esse temporibus maiores dicta quos doloribus facilis. Fuga, quis!</p>
+            
+        </article>
+        <footer><p>this is our footer section</p></footer>
+
+
+    </section>
+
+</body>
+</html>

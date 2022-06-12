@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Animated Side navigation Menu</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .sidenav {
+            width: 0;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color:chocolate;
+            padding-top: 100px;
+            transition: 0.5s;
+            overflow-x: hidden;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 40px;
+            text-decoration: none;
+            color:red;
+            display: block;
+            transition: 0.3s;
+        }
+        .sidenav a:hover {
+            color: white;
+            background-color: black;
+        }
+        .sidenav .closebutton {
+            position:absolute;
+            top:0;
+            margin-left: 50px;
+            right: 25px;
+        }
+        @media screen and (max-height:450) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {font-size: 20px;}
+        }
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebutton" onclick="closenav()">&times;</a>
+        <a href="#">about</a>
+        <a href="#">services</a>
+        <a href="#">clients</a>
+        <a href="#">contact</a>
+    </div>
+    <h2>Animated Side navigation Menu</h2>
+    <p>click here to open the sidemenu</p>
+    <span style="cursor: pointer;" onclick="opennav()" ><i class="fa fa-bars" aria-hidden="true"></i>open</span>
+<script>
+    function opennav() {
+        document.getElementById("mysidenav").style.width="150px";
+    }
+    function closenav() {
+        document.getElementById("mysidenav").style.width = "0";
+    }
+</script>
+</body>
+</html>

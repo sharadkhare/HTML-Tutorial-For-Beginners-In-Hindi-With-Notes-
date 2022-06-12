@@ -1,0 +1,23 @@
+
+body {
+        background-image: url(/html\ intro.png);
+        background-attachment: fixed;
+        background-size: 100% 120%;
+    }
+
+h1 {
+    color: aqua;
+    background-color: tomato;
+    border: solid black;
+    font-family:Arial;
+
+}
+p {
+    color: chartreuse;
+    background-color: sienna;
+    border: solid black;
+    text-align: center;
+    font-size: 150%;
+}
+
+/*https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css*/

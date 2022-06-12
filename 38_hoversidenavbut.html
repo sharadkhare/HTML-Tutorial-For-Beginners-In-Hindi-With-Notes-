@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Side navigation Buttons</title>
+    <style>
+        #mysidenav a {
+            position: absolute;
+            left: -80px;
+            padding: 15px;
+            transition: 0.3s;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+        #about {
+            top: 20px;
+            background-color: green;
+        }
+        #blog {
+            top: 80px;
+            background-color: blue;
+        }
+        #projects {
+            top: 140px;
+            background-color: red;
+        }
+        #contact {
+            top: 200px;
+            background-color: purple;
+        }
+        #mysidenav a:hover {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="mysidenav" class="sidenav">
+        <a href="#" id="about">about</a>
+        <a href="#"id="blog">blog</a>
+        <a href="#" id="projects">projects</a>
+        <a href="#"id="contact">Contact</a>
+    </div>
+    <div>
+        <h2 style="margin-left: 200px;">Hoverable Side navigation Buttons</h2>
+        <p style="margin-left: 200px;" >Hoverable Side navigation Buttons for left side .</p>
+    </div>
+</body>
+</html>

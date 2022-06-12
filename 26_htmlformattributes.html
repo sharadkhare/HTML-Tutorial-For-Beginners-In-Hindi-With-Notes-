@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form Attributes</title>
+</head>
+<body>
+    <h2>target attributes</h2>
+    <p>_blank, _self, _parent, _top</p>
+    <form  action="login.php" method="get" target="_top" autocomplete="off" novalidate>
+        <label for="fname">First name: </label><br>
+        <input type="text" id="fname" name="fname" value="sharad"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="khare"><br><br>
+        <input type="submit" value="submit">  
+    </form>
+
+    <h2>output- http://localhost:5500/login.php?fname=sharad&lname=khare</h2>
+</body>
+</html>

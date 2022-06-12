@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(18, 16, 16);
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px 16px;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: inherit;
+            color: white;
+            padding: 14px 16px;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdowncontent {
+            display: none;
+            position: absolute;
+            background-color: beige;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px black;
+            z-index: 1;
+        }
+        .dropdowncontent a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        .dropdowncontent a:hover {
+            background-color: rgb(150, 146, 146);
+        }
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+            <div class="dropdowncontent">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

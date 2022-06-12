@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html page with CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: chocolate;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background:teal;
+            padding: 20px;   
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: burlywood;
+            
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+        footer {
+            background-color: black;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+       
+        @media (max-width:600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>HTMl Tutorial</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">javascript</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae in deserunt blanditiis aut earum iusto sed! Doloremque dicta eaque tenetur at, corrupti laudantium necessitatibus consequatur distinctio minus quis ab.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quisquam eum. Natus, repudiandae. Est perspiciatis sit eius quaerat corrupti accusantium. Animi facere dignissimos obcaecati. Aspernatur quasi sapiente in ab veritatis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quos magnam repudiandae doloremque nam ipsam quas, expedita dignissimos, consectetur dolores quidem id esse obcaecati qui fugiat nostrum maiores iusto cumque.</p>
+
+        </article>
+     
+    </section>
+
+    <footer>
+        <p>footer of this page</p>
+    </footer>
+</body>
+</html>
